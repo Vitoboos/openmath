@@ -1,0 +1,122 @@
+.resourcesWrapper{
+    background-color: rebeccapurple;
+}
+
+.featureGrid{
+    display: grid;
+    border: solid rgb(5,67,203) groove;
+    border-radius: 5vw 0px 5vw 0px;
+}
+
+.featureGrid ul{
+    margin: 1vh 5vw;
+    padding: 0px;
+    list-style-type: none;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2vw;
+}
+
+.featureGrid li{
+    background: rgb(102,51,153);
+    background: linear-gradient(90deg, rgba(102,51,153,1) 45%, rgb(93, 40, 146) 75%, rgba(98,41,156,1) 90%);
+    text-align: center;
+    color: white;
+
+    box-shadow: rgb(0, 0, 0, 0.5) 9px 9px;
+    border: solid rgb(53, 6, 53) thick;
+    border-radius: 5vw 0px 0px 0px;
+}
+
+.featureGrid li:hover{
+    cursor: pointer;
+    animation: downFeature 0.5s forwards;
+}
+
+@keyframes downFeature {
+
+    100% {
+        transform: translate(0, -2vh);
+        border: dashed rgb(53, 6, 53) thick;
+        border-radius: 10vw 10vw 10vw 10vw;
+        box-shadow: none;
+    }
+}
+
+.featureGrid h3{
+    color: white;
+    font-size: 24px;
+}
+
+.featureGrid p{
+    font-size: 24px;
+    font-family: GemunuLibre;
+}
+
+.featureGrid .featureIcon{
+    width: 20vw;
+    height: 25vh;
+}
+
+
+/*  Waves Negative  */
+
+.customShapeDividerTop{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 95%;
+    margin: auto;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.customShapeDividerTop svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 10vw;
+    transform: rotateY(180deg);
+
+    background: rgb(128,0,128);
+    background: linear-gradient(90deg, rgba(128,0,128,1) 0%, rgba(102,51,153,1) 50%, rgba(128,0,128,1) 100%);
+}
+
+.customShapeDividerTop .shapeFill {
+    fill: rgba(196, 88, 196, 0.45);
+}
+
+.wavesDivider .title{
+    color: white;
+    position: relative;
+    top: 20vh;
+    text-align: center;
+    z-index: 1;
+
+    font-size: 48px;
+}
+
+/*  Curves Asym */
+
+.customShapeDividerTopCurves {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.customShapeDividerTopCurves svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 207px;
+}
+
+.customShapeDividerTopCurves .shapeFill {
+    fill: rebeccapurple;
+}

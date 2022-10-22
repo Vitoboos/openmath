@@ -1,0 +1,289 @@
+@font-face {
+    font-family: Silkscreen;
+    src: url(../../../fonts/Silkscreen-Regular.ttf);
+}
+
+@font-face {
+    font-family: GemunuLibre;
+    src: url(../../../fonts/GemunuLibre-VariableFont_wght.ttf);
+}
+
+*{
+    font-family: Silkscreen;
+}
+
+body{
+    background: rgb(223,56,187);
+    background: linear-gradient(90deg, rgba(223,56,187,1) 0%, rgba(255,134,229,1) 50%, rgba(205,80,199,1) 100%);    
+    margin: 0px;
+    padding: 0px;
+}
+
+
+.headerWrapper{
+    background: rgb(5,67,203);
+    background: linear-gradient(90deg, rgba(5,67,203,1) 0%, rgba(88,112,212,1) 50%, rgba(18,56,172,1) 100%);
+    height: 20vh;
+}
+
+header{
+    padding: 1vw 1vh;
+    margin: 0px 10vw;
+    display: grid;
+    grid-template-columns: 30% 70%;
+}
+
+header h1{
+    color: white;
+    background-color: rebeccapurple;
+    text-align: center;
+    
+    width: 100%;
+    border-radius: 5vw 0px 5vw 0px;
+    user-select: none;
+}
+
+header h1:hover{
+    cursor: pointer;
+    animation: changeTitle .25s forwards ;
+}
+
+@keyframes changeTitle {
+    0%{background-color: rebeccapurple;}
+    100%{
+        background-color: rgb(5,67,203);
+        transform: scaleX(1.25);
+        letter-spacing: 0.5vw;
+    }   
+}
+
+/* Header */
+
+header img{
+    width: 8vw;
+    height: 12vh;
+    margin: auto;
+    display: block;
+}
+
+nav ul{
+    margin: 3vh 5vw;
+    padding: 0px;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    list-style-type: none;
+}
+
+nav ul .item{
+    padding: 5px;
+    text-align: center;
+    color: white;
+}
+
+/*  Rainbow navbar  */
+
+nav ul{
+    margin: 3vh 5vw;
+    padding: 0px;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    list-style-type: none;
+}
+
+nav ul .item{
+    padding: 5px;
+    text-align: center;
+    color: white;
+}
+
+nav ul .item.color1{
+    background-color: darkred;
+}
+
+nav ul .item.color2{
+    background-color: rgb(192, 113, 16);
+}
+
+nav ul .item.color3{
+    background-color: rgb(175, 146, 15);
+}
+
+nav ul .item.color4{
+    background-color: rgb(10, 94, 10);
+}
+
+nav ul .item.color5{
+    background-color: rgb(5, 128, 204);
+}
+
+nav ul .item.color6{
+    background-color: rgb(6, 69, 109);
+}
+
+nav ul .item.color7{
+    background-color: rgb(39, 2, 39);
+}
+
+nav ul .item:hover{
+    background-color: #fff3d3;
+    color: black;
+    cursor: pointer;
+}
+
+/*  Subject styles  */
+
+.topicTitle{
+    margin: 0px 30vw;
+    padding: 1vh 2vw;
+    color: white;
+    text-align: center;
+
+    border-radius: 3vw 0px 3vw 0px;
+}
+
+#functionTitle{
+
+    background-color: rgb(5, 128, 204);
+
+}
+
+.summaryBox{
+    margin: 1.5vh 3vw;
+    padding: 1vh 1vw;
+    background-color: rebeccapurple;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.textBox{
+    position: relative;
+}
+
+.textBox p{ 
+    color: white;
+    margin: 5vh 3vw;
+    padding: 1.5vh 1vw;
+    font-size: 24px;
+    letter-spacing: 1px;
+    font-family: GemunuLibre;
+
+    border: groove rebeccapurple 1vw;
+}
+
+.summaryBox img{
+    background-color: white;
+    margin: auto;
+    display: block;
+    width: 30vw;
+    height: 50vh;   
+    border-radius: 5px;
+}
+/*  Lectures */
+
+.lectures{
+    margin: 1vh 5vw;
+    padding: 1vh 1vw;
+    background-color: rebeccapurple;
+}
+
+.lectures h2{
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    text-decoration: underline;
+}
+
+.lectures .item{
+    display: grid;
+    grid-template-columns: 40% 40% 20%;
+    border: groove rebeccapurple 1vw;
+}
+
+.lectures .item img{
+    margin: auto;
+    padding: 1vh 0.5vw;
+    display: block;
+    width: 20vw;
+    height: 20vh;
+}
+
+
+.lectures .item img:hover{
+    cursor: pointer;
+}
+
+.lectures .item h4{
+    color: white;
+    text-align: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Guides */
+
+.guides{
+    margin: 1vh 5vw;
+    padding: 1vh 1vw;
+    background-color: rebeccapurple;
+}
+
+.guides .item h3{
+    margin: 1vh 20vw;
+    padding: 0.5vh 0.5vw;
+    background-color: purple;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    text-decoration: underline;
+
+    border-radius: 5vw;
+}
+
+.guides .list .piece{
+    margin: 1.5vh 0px;
+    display: grid;
+    grid-template-columns: 40% 30% 30%;
+    text-align: center;
+    color: white;
+    border: solid rgb(255, 132, 228) 0.25vw;
+}
+
+.guides .list .piece p:hover{
+    cursor: pointer;
+    color: #fff3d3;
+}
+
+/* Study sheets */
+
+.sheetBox{
+    margin: 1vh 5vw;
+    padding: 1vh 1vw;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1vw;
+    background-color: rebeccapurple;
+}
+
+.sheetBox .item{
+    color: white;
+    text-align: center;
+    border: solid rgb(255, 132, 228) 0.25vw;
+    height: 40vh;
+}
+
+.sheetBox .item h1{
+    font-size: 20px;
+}
+
+.sheetBox .item img{
+    margin: auto;
+    display: block;
+    width: 15vw;
+    height: 30vh;
+}
+
+.sheetBox .item img:hover{
+    cursor: pointer;
+}

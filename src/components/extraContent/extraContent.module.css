@@ -1,0 +1,44 @@
+.mainTitle{
+    background-color: rgb(39, 2, 39);
+    margin: 0px 30vw;
+    padding: 1vh 2vw;
+    color: white;
+    text-align: center;
+
+    border-radius: 3vw 0px 3vw 0px;
+}
+
+.mainList{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1vw;
+    margin: 2vh 3vw;
+}
+
+.mainList .subtitle{
+    margin: 0px;
+    color: white;
+    background-color: rebeccapurple;
+    text-align: center;
+}
+
+.mainList .itemList{
+    background-color: #fff3d3;
+    box-shadow: rgba(0, 0, 0, 0.5) 4px 4px;
+}
+
+.mainList .itemList .topic:hover{
+    color: rgb(231, 169, 94);
+    background-color: bisque;
+    cursor: pointer;
+}
+
+.mainList .itemList .topic{
+    padding: 5px;
+    color: black;
+    text-align: center;
+    border: dashed rgb(231, 169, 94) thick;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+}

@@ -1,0 +1,95 @@
+.roadmapTitle{
+    margin: 2vh auto;
+    background-color: rebeccapurple;
+    padding: 3vw 3vh;
+    width: 80%;
+    color: white;
+    position: relative;
+    bottom: 10vh;
+    text-align: center;
+    text-decoration: underline;
+
+    border-radius: 0px 0px 10vw 10vw;
+}
+
+.roadmapBox{
+    margin: 2vh 5vw;
+}
+
+.roadmapBox .navBox{
+    padding: 0px;
+    margin: 0px 5vw;
+}
+
+.roadmapBox .navBox ul{
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5vw;
+}
+
+.roadmapBox .navBox ul li{
+    padding: 1vh 1vw;
+    background-color: white;
+    text-align: center;
+    font-size: 16px;
+    border-radius: 1vw 1vw;
+}
+
+.roadmapBox .navBox ul li.active{
+    color: white;
+    background-color: royalblue;
+}
+
+.roadmapBox .navBox ul li:hover{
+    color: white;
+    background-color: royalblue;
+    cursor: pointer;
+}
+
+.roadmapBox img{
+    margin: 1vh auto;
+    display: block;
+    width: 100%;
+    height: 50vh;
+    border-radius: 1vw;
+}
+
+.roadmapBox button{
+    color: white;
+    background-color: rgb(255, 255, 255);
+
+    background: rgb(223,56,187); 
+    margin: auto;
+    display: block;
+    font-size: 16px;
+    width: 30vw;
+    height: 8vh;
+
+    border: solid darkmagenta thick;
+    border-radius: 1vw;
+}
+
+.roadmapBox button:hover{
+    cursor: pointer;
+    color: white;
+    animation: changeBtn 0.5s forwards;
+}
+
+@keyframes changeBtn {
+    100%{background-color: royalblue;}
+}
+
+.roadmapBox .item{
+    display: none;
+    animation: itemSpawn 0.25s forwards;
+}
+
+@keyframes itemSpawn {
+    0%{opacity: 0;}
+    100%{opacity: 1;}
+}
+
+.roadmapBox .item.active{
+    display: block;
+}

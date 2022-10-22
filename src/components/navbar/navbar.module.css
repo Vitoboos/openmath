@@ -1,0 +1,47 @@
+nav ul{
+    margin: 3vh 5vw;
+    padding: 0px;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    list-style-type: none;
+}
+
+nav ul .item{
+    padding: 5px;
+    text-align: center;
+    color: white;
+}
+
+nav ul .item.color1{
+    background-color: darkred;
+}
+
+nav ul .item.color2{
+    background-color: rgb(192, 113, 16);
+}
+
+nav ul .item.color3{
+    background-color: rgb(175, 146, 15);
+}
+
+nav ul .item.color4{
+    background-color: rgb(10, 94, 10);
+}
+
+nav ul .item.color5{
+    background-color: rgb(5, 128, 204);
+}
+
+nav ul .item.color6{
+    background-color: rgb(6, 69, 109);
+}
+
+nav ul .item.color7{
+    background-color: rgb(39, 2, 39);
+}
+
+nav ul .item:hover{
+    background-color: #fff3d3;
+    color: black;
+    cursor: pointer;
+}

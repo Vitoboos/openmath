@@ -1,0 +1,56 @@
+.headerWrapper{
+    background: rgb(5,67,203);
+    background: linear-gradient(90deg, rgba(5,67,203,1) 0%, rgba(88,112,212,1) 50%, rgba(18,56,172,1) 100%);
+    height: 20vh;
+}
+
+header{
+    padding: 1vw 1vh;
+    margin: 0px 10vw;
+    display: grid;
+    grid-template-columns: 30% 70%;
+    
+}
+
+header h1{
+    color: white;
+    background-color: rebeccapurple;
+    text-align: center;
+    
+    width: 100%;
+    border-radius: 5vw 0px 5vw 0px;
+    user-select: none;
+    text-decoration: none;
+}
+
+/* NavLink CSS */
+
+a:link { text-decoration: none; }
+a:visited { text-decoration: none; }
+a:hover { text-decoration: none; }
+a:active { text-decoration: none; }
+
+/*  */
+
+header h1:hover{
+    cursor: pointer;
+    animation: changeTitle .25s forwards ;
+}
+
+@keyframes changeTitle {
+    0%{background-color: rebeccapurple;}
+    100%{
+        background-color: rgb(5,67,203);
+        transform: scaleX(1.25);
+        letter-spacing: 0.5vw;
+    }   
+}
+
+header img{
+    width: 8vw;
+    height: 12vh;
+    margin: auto;
+    display: block;
+}
+
+
